@@ -102,21 +102,22 @@ table(s, [
     ("Hospital sites (EOY)", "3", "10", "25"),
     ("Exit ARR", "$360K", "$1.2M", "$3.0M"),
     ("Revenue", "$90K", "$860K", "$2.21M"),
-    ("Gross margin", "23%", "74%", "76%"),
+    ("Gross margin", "84%", "84%", "84%"),
     ("Opex", "$348K", "$870K", "$1.50M"),
-    ("Net income", "($327K)", "($236K)", "+$189K"),
+    ("Net income", "($272K)", "($144K)", "+$366K"),
 ], l=0.7, t=2.15, w=7.4, col0_w=3.0, hi_row=2, hi_cell=(6, 3))
-txt(s, 0.7, 5.05, 7.5, 1.7, [
-    ("▸  Bottom-up: $10K/mo blended site license ($5K entry service line → $15–20K expanded).", 11.5, False, BODY, 6),
-    ("▸  8-month pilots (procurement + IT review) convert to paid in month 9; Y3 ramp follows 510(k).", 11.5, False, BODY, 6),
-    ("▸  $2M total capital to breakeven: this $500K pre-seed + ~$1.5M seed raised on converted pilots.", 11.5, False, BODY, 0),
+txt(s, 0.7, 5.05, 7.5, 1.9, [
+    ("▸  Bottom-up: $10K/mo blended site license ($5K entry service line → $15–20K expanded).", 11, False, BODY, 5),
+    ("▸  8-month pilots (procurement + IT review) convert to paid in month 9; Y3 ramp follows 510(k).", 11, False, BODY, 5),
+    ("▸  Glasses depreciated over 3 yrs; opex is the two founders + regulatory/cloud/GTM, not headcount growth.", 11, False, BODY, 5),
+    ("▸  $2M total capital to breakeven: this $500K pre-seed + ~$1.5M seed raised on converted pilots.", 11, False, BODY, 0),
 ])
 panel(s, "UNIT ECONOMICS / SITE", [
     ("$10K / month site license (blended)", 12, True, WHITE, 2),
     ("$1K / month cloud, inference & support", 12, False, WHITE, 12),
     ("$20K hardware — 10 glasses, free to the hospital", 12, True, WHITE, 2),
-    ("recovered in 2.2 months of gross profit", 12, False, WHITE, 12),
-    ("90% software gross margin at steady state", 12, False, WHITE, 12),
+    ("cash-recovered in ~2 months; depreciated over 3 yrs", 12, False, WHITE, 12),
+    ("84% blended gross margin (90% on software)", 12, False, WHITE, 12),
     ("Every site = $120K ARR against a one-time $20K hardware cost.", 12, True, TEAL, 0),
 ])
 
